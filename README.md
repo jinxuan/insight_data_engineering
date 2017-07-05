@@ -18,7 +18,7 @@ sh ./run.sh`
 
 For purchase event, time complexity is O(n), where n is the number of friends in the degree d network. I traverse a local 
 For add friend event, time complexity is O(n), 
-For un friend  event, time complexity is O(n^2), for all the impacted node in the network, we need to use BFS to recalculate its neighbors's degree.
+For unfriend  event, time complexity is O(n^2), for all the impacted node in the network, we need to use BFS to recalculate its neighbors's degree.
 
 # Discussion
 
@@ -51,9 +51,9 @@ There are several design with different space-time trade off. Specifically, they
     
 | Implementation        | Space           | Time  |
 | ------------- |:-------------:| -----:|
-| col 3 is      | Low | Slow |
-| col 2 is      | Medium     |   Medium |
-| zebra stripes | Large      |    Fast |
+| 1    | Low | Slow |
+| 2     | Medium     |   Medium |
+| 3 | Large      |    Fast |
 
 
 
