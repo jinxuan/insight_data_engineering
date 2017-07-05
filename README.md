@@ -47,7 +47,7 @@ There are several design with different space-time trade off. Specifically, they
     1. For each purchase event, traverse a friend list. Append to its network purchase history.
     2. Assume use same implementation in 2 for friend event. 
     
-    ####Theory Space-Time trade off comparison
+    #### Theory Space-Time trade off comparison
     
 | Implementation        | Space           | Time  |
 | ------------- |:-------------:| -----:|
