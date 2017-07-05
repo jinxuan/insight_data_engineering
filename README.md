@@ -58,7 +58,7 @@ There are several design with different space-time trade off. Specifically, they
 
 
 ## Scalability
-I choose this programming model largely for scalability. The most easy to implement approach is the No.1 model mentioned above. But when data is large enough and we have to shard or partition data to different compute node. Doing BFS frequently through network IO is a bad idea and will cost a lot of time.
+Based on the space-time trade off discussed above, I choose the second programming model largely for scalability. The most easy to implement approach is the first model mentioned above. But when data is large enough, we have to shard or partition data to different compute node. Doing BFS frequently through network IO is a bad idea and will cost a lot of time.
 
 By saving degree d netork locally in each graph node, once the batch processing mode is finished the network will be relative stable. So the network IO mentioned above could be saved quite a bit. 
  
